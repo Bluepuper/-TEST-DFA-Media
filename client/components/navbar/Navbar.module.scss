@@ -1,0 +1,43 @@
+.list {
+    font-size: 13px;
+    list-style-type: none;
+    .item {
+        cursor: pointer;
+        position: relative;
+        padding: 5px 20px;
+        margin: 10px;
+        div {
+            display: flex;
+            align-items: center;
+        }
+        span {
+            font-size: 25px;
+        }
+        a {
+            padding-left: 20px;
+        }
+        ::before {
+            position: absolute;
+            top: 0;
+            left: -4px;
+            content: '';
+            width: 4px;
+            height: 100%;
+            background-color: transparent;
+            transition: 0.2s ease;
+        }
+    }
+    .item:hover {
+        background-color: rgba(0,0,0,0.1);
+        transition: 0.2s ease;
+    }
+    .item_active {
+        span {
+            color: #6781F7;
+        }
+        color: rgb(235, 235, 235);
+        ::before {
+            background-color: #6781F7;
+        }
+    }
+}
