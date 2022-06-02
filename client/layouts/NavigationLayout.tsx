@@ -45,14 +45,15 @@ const NavigationLayout: React.FC<any> = (props) => {
                         className={styles.close}
                         onClick={() => setIsMenuOpened(false)}
                     />
+                    <div
+                        className={styles.login_wrapper}
+                        onClick={() => {setIsPopupOpened(true)}}
+                    >
+                        <p>login</p>
+                        <span> <IoMdLogIn /> </span>
+                    </div>
                 </nav>
-                <div
-                    className={styles.login_wrapper}
-                    onClick={() => {setIsPopupOpened(true)}}
-                >
-                    <p>login</p>
-                    <span> <IoMdLogIn /> </span>
-                </div>
+                
             </section>
 
             <section className={styles.content_container}>
