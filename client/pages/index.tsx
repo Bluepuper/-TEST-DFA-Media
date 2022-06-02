@@ -5,7 +5,13 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <h1>first page</h1>
+    <>
+      <Head>
+        <title>Главная | TEST DFA Media</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <h1>Главная</h1>
+    </>
   )
 }
 

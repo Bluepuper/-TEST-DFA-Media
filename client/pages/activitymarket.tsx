@@ -4,9 +4,15 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  return (
-    <h1>Биржа активности</h1>
-  )
+	return (
+		<>
+			<Head>
+				<title>Биржа активности | TEST DFA Media</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<h1>Биржа активности</h1>
+		</>
+	)
 }
 
 export default Home
