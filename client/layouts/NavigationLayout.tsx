@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from '/styles/NavigationLayout.module.scss'
-import Navbar from '/components/navbar/Navbar'
+import Navbar from '../components/navbar/Navbar'
 import { IoMdMenu, IoMdCloseCircleOutline, IoMdLogIn } from 'react-icons/io'
 
 const NavigationLayout: React.FC<any> = (props) => {
